@@ -1,0 +1,34 @@
+
+GET http://localhost:3001
+
+###
+
+GET http://localhost:3001/products
+
+###
+POST http://localhost:3001/products 
+Content-Type: application/json
+
+
+{
+    "name": "To be deleted",
+    "price": "3450",
+    "quantity": "102",
+    "image" : ""
+}
+
+###
+///Gilbeys Post
+GET http://localost:3001/products/6480948c9bf3d7910215d32b
+
+###
+//Update Gilbeys Price
+PATCH http://localhost:3001/products/6480948c9bf3d7910215d32b
+Content-Type: application/json
+
+{
+    "price": "980"
+}
+
+###
+DELETE http://localhost:3001/products/648097ee074ded8f0e8977c0
